@@ -1,0 +1,174 @@
+{
+  "Add_New_Entry": [
+    {
+      "selectTollName": "Kappalur",
+      "selectVehicleType": "LCV",
+      "vehicleNumber": "DVGT128438526",
+      "tariff": 20,
+      "AddDateAndTime": "2024-01-04T17:53:51.442Z",
+      "id": 13
+    },
+    {
+      "selectTollName": "Kappalur",
+      "selectVehicleType": "LCV",
+      "vehicleNumber": "gsdftf12345",
+      "tariff": "95",
+      "AddDateAndTime": "2024-01-07T17:59:05.104Z",
+      "id": 14
+    },
+    {
+      "selectTollName": "Chengalpattu",
+      "selectVehicleType": "Truck/Bus",
+      "vehicleNumber": "SDE1775",
+      "tariff": "205",
+      "AddDateAndTime": "2024-01-14T05:36:42.435Z",
+      "id": 15
+    },
+    {
+      "selectTollName": "Krishnagiri",
+      "selectVehicleType": "Truck/Bus",
+      "vehicleNumber": "HGC1234",
+      "tariff": "205",
+      "AddDateAndTime": "2024-01-14T05:47:43.966Z",
+      "id": 16
+    },
+    {
+      "selectTollName": "Chengalpattu",
+      "selectVehicleType": "LCV",
+      "vehicleNumber": "MH12DG1234",
+      "tariff": "95",
+      "AddDateAndTime": "2024-01-15T05:26:21.392Z",
+      "id": 17
+    },
+    {
+      "selectTollName": "Chengalpattu",
+      "selectVehicleType": "Car/Jeep/Van",
+      "vehicleNumber": "AS2$QE6575",
+      "tariff": "60",
+      "AddDateAndTime": "2024-01-15T05:29:23.641Z",
+      "id": 18
+    },
+    {
+      "selectTollName": "Chengalpattu",
+      "selectVehicleType": "LCV",
+      "vehicleNumber": "sfsfg34567",
+      "tariff": "95",
+      "AddDateAndTime": "2024-01-16T18:31:49.791Z",
+      "id": 19
+    },
+    {
+      "selectTollName": "Chengalpattu",
+      "selectVehicleType": "Heavy vehicle",
+      "vehicleNumber": "ksdhf23434",
+      "tariff": "320",
+      "AddDateAndTime": "2024-01-16T18:39:55.977Z",
+      "id": 20
+    },
+    {
+      "selectTollName": "Krishnagiri",
+      "selectVehicleType": "Heavy vehicle",
+      "vehicleNumber": "fsg373",
+      "tariff": "320",
+      "AddDateAndTime": "2024-01-16T18:41:02.665Z",
+      "id": 21
+    },
+    {
+      "selectTollName": "Kappalur",
+      "selectVehicleType": "LCV",
+      "vehicleNumber": "sdh355",
+      "tariff": "95",
+      "AddDateAndTime": "2024-01-20T09:28:29.258Z",
+      "id": 22
+    },
+    {
+      "selectTollName": "Kappalur",
+      "selectVehicleType": "Truck/Bus",
+      "vehicleNumber": "fdgt13234",
+      "tariff": "205",
+      "AddDateAndTime": "2024-01-24T10:45:08.676Z",
+      "id": 23
+    }
+  ],
+  "Add_New_Toll": [
+    {
+      "TollName": "Krishnagiri",
+      "SelectVehicleFare": "Car/Jeep/Van",
+      "SingleJourney": 70,
+      "ReturnJourney": 40,
+      "SelectVehicleFare_2": "LCV",
+      "SingleJourney_2": 110,
+      "ReturnJourney_2": 65,
+      "SelectVehicleFare_3": "Truck/Bus",
+      "SingleJourney_3": 235,
+      "ReturnJourney_3": 130,
+      "SelectVehicleFare_4": "Heavy vehicle",
+      "SingleJourney_4": 365,
+      "ReturnJourney_4": 200,
+      "id": 6
+    },
+    {
+      "TollName": "kappalur",
+      "SelectVehicleFare": "Car/Jeep/Van",
+      "SingleJourney": 60,
+      "ReturnJourney": 30,
+      "SelectVehicleFare_2": "LCV",
+      "SingleJourney_2": 50,
+      "ReturnJourney_2": 60,
+      "SelectVehicleFare_3": "Truck/Bus",
+      "SingleJourney_3": 127,
+      "ReturnJourney_3": 100,
+      "SelectVehicleFare_4": "Heavy vehicle",
+      "SingleJourney_4": 305,
+      "ReturnJourney_4": 250,
+      "id": 8
+    },
+    {
+      "TollName": "kappalur",
+      "SelectVehicleFare": "LCV",
+      "SingleJourney": 50,
+      "ReturnJourney": 75,
+      "SelectVehicleFare_2": "Car/Jeep/Van",
+      "SingleJourney_2": 35,
+      "ReturnJourney_2": 105,
+      "SelectVehicleFare_3": "Truck/Bus",
+      "SingleJourney_3": 275,
+      "ReturnJourney_3": 250,
+      "SelectVehicleFare_4": "Heavy vehicle",
+      "SingleJourney_4": 375,
+      "ReturnJourney_4": 358,
+      "id": 9
+    },
+    {
+      "TollName": "kappalur",
+      "SelectVehicleFare": "Car/Jeep/Van",
+      "SingleJourney": 50,
+      "ReturnJourney": 75,
+      "SelectVehicleFare_2": "LCV",
+      "SingleJourney_2": 35,
+      "ReturnJourney_2": 105,
+      "SelectVehicleFare_3": "Truck/Bus",
+      "SingleJourney_3": 275,
+      "ReturnJourney_3": 250,
+      "SelectVehicleFare_4": "Heavy vehicle",
+      "SingleJourney_4": 375,
+      "ReturnJourney_4": 358,
+      "id": 10
+    },
+    {
+      "TollName": "kappalur",
+      "SelectVehicleFare": "Car/Jeep/Van",
+      "SingleJourney": 50,
+      "ReturnJourney": 75,
+      "SelectVehicleFare_2": "Car/Jeep/Van",
+      "SingleJourney_2": 35,
+      "ReturnJourney_2": 105,
+      "SelectVehicleFare_3": "LCV",
+      "SingleJourney_3": 275,
+      "ReturnJourney_3": 250,
+      "SelectVehicleFare_4": "Heavy vehicle",
+      "SingleJourney_4": 375,
+      "ReturnJourney_4": 358,
+      "id": 11
+    }
+  ]
+}

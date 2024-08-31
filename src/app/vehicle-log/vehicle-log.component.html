@@ -1,0 +1,63 @@
+<div class="header">
+    <div class="toll-text"> Toll Management Application </div>
+    <hr>
+    <!-- Vehicle data -->
+    <div class="container" >
+        
+        <div class="link">
+            <a href="#"> Toll entries</a><a href="#">/ Vehicle entries</a>
+        </div>
+        <div class="icons">
+            <div class="fii">
+                | <i class="fa fa-filter"></i>
+                <div class="dropdowns">
+                  <a id="list" (click)="filterByLocation('All')"> All </a>
+                  <i class="fa fa-check"></i>
+                  <a id="list" (click)="filterByLocation('Kappalur')"> Kappalur </a>
+                  <a id="list" (click)="filterByLocation('Chengalpattu')"> Chengalpattu </a>
+                  <a id="list" (click)="filterByLocation('Krishnagiri')"> Krishnagiri </a>
+                </div>
+            </div>
+
+            <div class="faa">
+                <i (click)="search()" class="fa fa-search"></i>
+                <input [(ngModel)]="searchValue" (keyup.enter)="search()" class="search-icon" type="search" placeholder="Search vehicle">
+            </div>
+
+        </div>
+        <div class="btns">
+            <a id="rout" routerLink="/vehicle-log/add-vehicle"> Add vehicle entry </a>
+            <a id="rout" routerLink="/vehicle-log/add-toll"> Add new toll </a>
+            <a id="rout" routerLink="/toll-list"> View all tolls </a>
+        </div>
+    </div>
+</div>
+
+<!-- add vehicle oppup -->
+
+
+<!-- table -->
+<div class="tabledata">
+    <table>
+        <tr>
+            <th style="width: 35%;">VEHICLE TYPE</th>
+            <th>VEHICLE NUMBER</th>
+            <th>DATE / TIME</th>
+            <th> TOLL NAME </th>  
+            <th> TARIFF </th>
+        </tr>
+        <tr *ngFor="let vehicle of vehicles">
+            <td> {{vehicle.selectVehicleType}} </td>
+            <td> {{vehicle.vehicleNumber}} </td>
+            <td> {{vehicle.AddDateAndTime |date:'dd/MM/yyyy, HH:mm:ss' }}</td>
+            <td> {{vehicle.selectTollName}} </td>
+            <td> {{vehicle.tariff}} 
+                <!-- <i class="fa-solid fa-trash del" ></i> -->
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,40 @@
+<div class="bg" *ngIf="isPopupOpen">
+    <div class="container">
+        <label class="fa-solid fa-xmark" (click)="closePopup()"></label>
+
+        <div class="text"> Add new entry </div>
+        <form [formGroup]="AddVehicleForm" (ngSubmit)="onFormSubmit()">
+            <div class="data">
+                <label> Select toll name*</label>
+                <select name="toll" id="toll" formControlName="selectTollName">
+                    <option value="All"> All </option>
+                    <option value="Kappalur"> Kappalur </option>
+                    <option value="Chengalpattu"> Chengalpattu </option>
+                    <option value="Krishnagiri"> Krishnagiri </option>
+                </select>
+            </div>
+            <div class="data">
+                <label> Select vehicle type*</label>
+                <select name="vehicle" id="vehicle" (click)="selectRate($event)"formControlName="selectVehicleType">
+                    <option value="Car/Jeep/Van">Car/Jeep/Van</option>
+                    <option value="LCV">LCV</option>
+                    <option value="Truck/Bus">Truck/Bus</option>
+                    <option value="Heavy vehicle">Heavy vehicle</option>
+                </select>
+            </div>
+            <div class="data">
+                <label> Vehicle Number* </label>
+                <input type="text" placeholder="Enter your login id" formControlName="vehicleNumber" required>
+            </div>
+            <div class="data">
+                <label> Tariff* </label>
+                <input type="number" placeholder="Tariff amount" formControlName="tariff" [(ngModel)]="vehicleValue1" readonly required>
+            </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit"> Add Entry </button>
+            </div>
+        </form>
+    </div>
+</div>
+

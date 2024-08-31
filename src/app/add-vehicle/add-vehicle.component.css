@@ -1,0 +1,130 @@
+.bg{
+    background-color: red;
+}
+.text {
+    padding-bottom: 30px;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container {
+    background: #fff;
+    border: 2px solid rgb(222, 220, 220);
+    border-radius: 10px;
+    width: 450px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+#show {
+    float: left;
+    left: 30px;
+}
+.container .fa-xmark {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20px;
+    padding: 10px;
+}
+/* .container .fa-xmark:hover {
+    color: #3498db;
+} */
+.container .text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.container form {
+    margin-top: -20px;
+}
+.container form .data {
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+form .data label {
+    font-size: 18px;
+    font-weight: 500;
+}
+form .data input {
+    height: 90%;
+    width: 90%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+form .data select {
+    height: 92%;
+    width: 92%;
+    padding-left: 10px;
+    margin-right: 20px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+form .data select:hover {
+    border-color: #3498db;
+    border-bottom-width: 3px;
+}
+form select option{
+    margin: 15px;
+    padding: 15px;
+}
+form .data input:hover {
+    border-color: #3498db;
+    border-bottom-width: 3px;
+}
+form .forgot-pass {
+    margin-top: -8px;
+}
+form .forgot-pass a {
+    color: #3498db;
+    text-decoration: none;
+}
+form .forgot-pass a:hover {
+    text-decoration: underline;
+}
+form .btn {
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+form .btn .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    transition: all 0.4s;
+}
+form .btn:hover .inner {
+    left: 0;
+}
+form .btn button {
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: blue;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+form .signup-link {
+    text-align: center;
+}
+form .signup-link a {
+    color: #3498db;
+}
+form .signup-link a:hover {
+    text-decoration: underline;
+}

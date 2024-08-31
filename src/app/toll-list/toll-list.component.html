@@ -1,0 +1,47 @@
+<div class="header">
+    <div class="toll-text"> Toll Management Application 11</div><hr> 
+    <div class="container">
+        <div class="link">
+            <a href="#"> Tollgate List </a> 
+        </div> 
+        <div class="icons"> 
+            <div class="faa"> |
+                <i (click)="search()" class="fa fa-search"></i>
+                <input [(ngModel)]="searchTollValue" (keyup.enter)="search()" class="search-icon" type="search" placeholder="Search a toll">
+            </div>
+        </div>
+        <div class="btns">
+            <button class="button" routerLink="#"> Add vehicle entry </button>
+            <button class="button" routerLink="/toll-list/add-toll"> Add new toll </button>
+            <button class="button" routerLink="/vehicle-log"> Back to vehicle logs </button> 
+            <!-- it's work here -->
+        </div>
+    </div>
+</div>
+
+<!-- table -->
+<div class="tabledata" >
+    <table *ngIf="!show">
+        <tr>
+            <th style="width: 35%;"> TOLL NAME </th>
+            <th>CAR/JEEP/VAN</th>
+            <th> LCV</th>
+            <th> TRUCK/BUS </th>
+            <th> HEAVY VEHICLE </th>
+            <th> ACTION </th>
+        </tr>
+        <tr *ngFor="let toll of tolls">
+            <td> {{toll.TollName}} </td>
+            <td> {{toll.SingleJourney}} / {{toll.ReturnJourney}} </td>
+            <td> {{toll.SingleJourney_2}} /{{toll.ReturnJourney_2}} </td>
+            <td> {{toll.SingleJourney_3}} / {{toll.ReturnJourney_3}} </td>
+            <td> {{toll.SingleJourney_4}} / {{toll.ReturnJourney_4}} </td>
+            <td><button (click)="onDelete(toll)" id="icons-delete"> <i class="fa-solid fa-trash del"></i> </button></td>
+        </tr>
+    </table>
+    <div *ngIf="show">
+        <p>Toll not found</p>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,84 @@
+<div class="center" *ngIf="isPopupOpen">
+    <div class="container">
+        <label class="fa-solid fa-xmark" (click)="closePopup()" ></label>
+
+        <div class="text"> Add new toll </div>
+
+        <form [formGroup]="TollFrom"  (submit)="onTollFormSubmit()" action="#" class="registration-form">
+            <div class="data">
+                <label> Toll Name *</label>
+                <input id="tollname" type="text" placeholder="Enter toll name" formControlName="TollName" required>
+            </div>
+            <div class="personal-details">
+                <label> Vehicle fare details *</label>
+                <div class="three-details-item">
+                    <select name="vehicle" id="vehicle" formControlName="SelectVehicleFare">
+                        <option value="Select vehicle type">Select vehicle type </option>
+                        <option value="Car/Jeep/Van">Car/Jeep/Van</option>
+                        <option value="LCV">LCV</option>
+                        <option value="Truck/Bus">Truck/Bus</option>
+                        <option value="Heavy vehicle">Heavy vehicle</option>
+                    </select>
+                    <label class="SingleJ">
+                        <input type="number" placeholder="Single Journey" formControlName="SingleJourney">
+                    </label>
+                    <label class="ReturnJ">
+                        <input type="number" placeholder="Return Journey" formControlName="ReturnJourney">
+                    </label>
+                </div>
+
+                <div class="three-details-item">
+                    <select name="vehicle" id="vehicle" formControlName="SelectVehicleFare_2">
+                        <option value="Select vehicle type" selected >Select vehicle type </option>
+                        <option value="Car/Jeep/Van">Car/Jeep/Van</option>
+                        <option value="LCV">LCV</option>
+                        <option value="Truck/Bus">Truck/Bus</option>
+                        <option value="Heavy vehicle">Heavy vehicle</option>
+                    </select>
+                    <label class="SingleJ">
+                        <input type="number" placeholder="Single Journey" formControlName="SingleJourney_2">
+                    </label>
+                    <label class="ReturnJ">
+                        <input type="number" placeholder="Return Journey" formControlName="ReturnJourney_2">
+                    </label>
+                </div>
+
+                <div class="three-details-item">
+                    <select name="vehicle" id="vehicle" formControlName="SelectVehicleFare_3">
+                        <option value="Select vehicle type" selected>Select vehicle type </option>
+                        <option value="Car/Jeep/Van">Car/Jeep/Van</option>
+                        <option value="LCV">LCV</option>
+                        <option value="Truck/Bus">Truck/Bus</option>
+                        <option value="Heavy vehicle">Heavy vehicle</option>
+                    </select>
+                    <label class="SingleJ">
+                        <input type="number" placeholder="Single Journey" formControlName="SingleJourney_3">
+                    </label>
+                    <label class="ReturnJ">
+                        <input type="number" placeholder="Return Journey" formControlName="ReturnJourney_3">
+                    </label>
+                </div>
+
+                <div class="three-details-item">
+                    <select name="vehicle" id="vehicle" formControlName="SelectVehicleFare_4">
+                        <option value="Select vehicle type" selected>Select vehicle type </option>
+                        <option value="Car/Jeep/Van">Car/Jeep/Van</option>
+                        <option value="LCV">LCV</option>
+                        <option value="Truck/Bus">Truck/Bus</option>
+                        <option value="Heavy vehicle">Heavy vehicle</option>
+                    </select>
+                    <label class="SingleJ">
+                        <input type="number" placeholder="Single Journey" formControlName="SingleJourney_4">
+                    </label>
+                    <label class="ReturnJ">
+                        <input type="number" placeholder="Return Journey" formControlName="ReturnJourney_4">
+                    </label>
+                </div>
+            </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit"> Add details </button>
+            </div>
+        </form>
+    </div>
+</div>
