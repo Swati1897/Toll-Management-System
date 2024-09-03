@@ -6,7 +6,7 @@ import { TollListComponent } from './toll-list/toll-list.component';
 import { VehicleLogComponent } from './vehicle-log/vehicle-log.component';
 
 const routes: Routes = [
-    { path:'', redirectTo:'/vehicle-log', pathMatch:'full'},
+    { path:'', component:VehicleLogComponent, pathMatch:'full'},
       
       { path:'vehicle-log', component:VehicleLogComponent, children:[
           {path:'add-vehicle', component:AddVehicleComponent },

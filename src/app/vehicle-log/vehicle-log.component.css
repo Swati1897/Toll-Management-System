@@ -43,7 +43,6 @@ hr{
     font-size: 24px;
     padding: 5px;
     color: gray;
-    /* background-color: green; */
     background-color: white;
 }
 .dropdowns{
@@ -63,7 +62,6 @@ hr{
     left: 28px;
     width: 20px;
     height: 20px;
-    /* background: pink; */
     background: white;
     transform: rotate(45deg);
 }
@@ -99,7 +97,6 @@ hr{
     display: block;
     transition-delay: 1ms;
 } 
-/*  */
 
 .faa .search-icon{
     font-size: 18px;
@@ -119,7 +116,6 @@ hr{
     bottom: 30px;
     cursor: pointer;
     flex: 1 0 120px;
-    /* padding-left: 45px; */
 }
 .search-icon::placeholder{
     color:grey;
@@ -167,7 +163,6 @@ hr{
 .tabledata {
     margin: 20px;
     padding: 20px;
-    /* border: 5px solid lightgreen; */
     display: flex;
 }
 table {
